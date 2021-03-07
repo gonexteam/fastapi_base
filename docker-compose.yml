@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  web:
+    build: "."
+    ports:
+      - "8000:8000"
+    links:
+      - my_db
+  my_db:
+    build: "./db"
+    # Instead of building the database from a docker file, you can use an image directly
+    # image: mongo:4.0.0
