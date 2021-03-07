@@ -14,7 +14,7 @@ from server.db.mongodb import close, connect, AsyncIOMotorClient, get_database
 import uvicorn
 
 
-app = FastAPI(title="MFarm v1", version="2")
+app = FastAPI(title="GoNex v1", version="2")
 app.add_middleware(GZipMiddleware, minimum_size=1000)
 
 app.include_router(endpoint_router, prefix=default_route_str)
@@ -38,7 +38,7 @@ async def on_app_shutdown():
 async def home():
     """Home page
     """
-    return Response("MFarm v1")
+    return Response("GoNex v1")
 
 
 if __name__ == "__main__":
