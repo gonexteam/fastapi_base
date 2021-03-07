@@ -1,5 +1,5 @@
 """
-MFarm v1
+GoNex v1
 """
 from fastapi import FastAPI
 
