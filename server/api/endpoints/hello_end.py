@@ -1,7 +1,4 @@
-"""
-Given an email address, get the company information
-along with Industry, Sector, etc...
-"""
+
 from fastapi import APIRouter
 
 hello_router = APIRouter()
